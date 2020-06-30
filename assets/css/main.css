@@ -18,6 +18,23 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+body {
+	scrollbar-width: thin;          /* "auto" or "thin"  */
+	scrollbar-color: black #f2f2f2;   /* scroll thumb & track */
+}
+
+
+body::-webkit-scrollbar {
+	width: 10px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+	background: whitesmoke;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+	background-color: black;    /* color of the scroll thumb */
+	border-radius: 30px;
+}
+
 .tip p{
 	color: black;
 	text-align: center;
