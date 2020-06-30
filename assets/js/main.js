@@ -26,8 +26,12 @@ var settings = {
 };
 
 $(document).ready(function() {
-	$('.select2').select2();
+	$('.custom-select').select2();
 });
+$(document).ready(function() {
+    $('.custom-select').select2();
+});
+
 
 $(function() {
 	$('#btnAddsite').click(function(){
@@ -77,6 +81,9 @@ $(function() {
 			"                           </div>\n" +
 			"                   </div>\n" +
 			"                </div>" );
+        setTimeout(function(){
+            $('.select2').select2();
+        }, 100);
 	});
 });
 
